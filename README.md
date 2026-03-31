@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/46740228.svg)](www.ingenieria.unam.mx/)[![DOI](https://zenodo.org/badge/46740228.svg)](https://www.dgire.unam.mx/images/planes/lic/16/1552.pdf)
+[![DOI](https://zenodo.org/badge/46740228.svg)](https://www.ingenieria.unam.mx/)[![DOI](https://zenodo.org/badge/46740228.svg)](https://www.dgire.unam.mx/images/planes/lic/16/1552.pdf)
 
 # Estructuras Discretas
 
