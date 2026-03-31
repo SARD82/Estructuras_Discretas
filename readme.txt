@@ -1,1 +1,0 @@
-% Cuando agamos el markdown especificar que ocupamos miklatex y strawberry pearl
