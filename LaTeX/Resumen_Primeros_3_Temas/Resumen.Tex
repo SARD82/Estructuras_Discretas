@@ -1,0 +1,116 @@
+\documentclass[12pt, letterpaper]{article}
+\input{SubPartes/librerias.Tex}
+
+\onehalfspacing
+
+\title{\textbf{Resumen de Estructuras Discretas: Lógica, Conjuntos y Sistemas Algebraicos}}
+\author{Durán Rendón Santiago}
+\date{06 Abril 2026}
+
+\begin{document}
+
+\input{SubPartes/Portada.Tex}
+
+\tableofcontents
+
+\section{Lógica Proposicional y Cálculo de Predicados}
+
+Uno de los propósitos principales de la lógica matemática es proporcionar reglas formales mediante las cuales se pueda determinar si un argumento o razonamiento es válido. En el contexto de la ingeniería y la computación, requerimos de un lenguaje objeto formal en el que la sintaxis esté perfectamente definida, eliminando las ambigüedades de los lenguajes naturales \cite{tremblay2000matematicas}.
+
+\subsection{Enunciados y Conectivas}
+La unidad básica de nuestro lenguaje es el enunciado primario o atómico, el cual se define como una declaración que no puede descomponerse y a la que se le puede asignar uno y sólo uno de dos valores de verdad: verdadero (V) o falso (F). A partir de estos enunciados primarios (denotados por letras mayúsculas como $P, Q, R$), podemos construir enunciados moleculares o compuestos utilizando conectivas lógicas \cite{tremblay2000matematicas}.
+
+El libro define formalmente las siguientes conectivas:
+\begin{itemize}
+    \item \textbf{Negación ($\neg P$):} Invierte el valor de verdad del enunciado. Si $P$ es V, $\neg P$ es F.
+    \item \textbf{Conjunción ($P \wedge Q$):} Es verdadera únicamente cuando tanto $P$ como $Q$ son verdaderos.
+    \item \textbf{Disyunción ($P \vee Q$):} Es el ``O inclusivo''; es falsa sólo cuando $P$ y $Q$ son falsos simultáneamente.
+    \item \textbf{Condicional ($P \rightarrow Q$):} Se lee ``Si $P$, entonces $Q$''. Es falsa únicamente cuando el antecedente $P$ es V y el consecuente $Q$ es F.
+    \item \textbf{Bicondicional ($P \rightleftharpoons Q$):} Se lee ``$P$ si y sólo si $Q$''. Tiene el valor V siempre que $P$ y $Q$ posean valores de verdad idénticos.
+\end{itemize}
+
+\textbf{Ejemplo de aplicación:}
+Supongamos que en un algoritmo financiero definimos los siguientes enunciados:
+$P$: El precio de la acción sube.
+$Q$: El volumen de transacciones es alto.
+La regla ``Si el precio de la acción sube y el volumen es alto, entonces se ejecuta la orden de compra ($R$)'' se simboliza mediante notación matemática como:
+$$(P \wedge Q) \rightarrow R$$
+
+\subsection{Tautologías y Teoría de la Inferencia}
+Una fórmula enunciativa se denomina \textit{tautología} (o verdad lógica) si es verdadera sin importar los valores de verdad de los enunciados que reemplazan a sus variables. Por el contrario, si siempre es falsa, se denomina \textit{contradicción} \cite{tremblay2000matematicas}.
+
+La teoría de la inferencia se centra en obtener conclusiones válidas a partir de un conjunto de premisas. Decimos que una conclusión $C$ se sigue lógicamente de las premisas $H_1, H_2, \dots, H_m$ si la implicación:
+$$H_1 \wedge H_2 \wedge \dots \wedge H_m \Rightarrow C$$
+es una tautología. Entre las reglas de inferencia más utilizadas en demostraciones matemáticas encontramos el \textit{Modus Ponens} ($P, P \rightarrow Q \Rightarrow Q$) y el \textit{Silogismo Hipotético} ($P \rightarrow Q, Q \rightarrow R \Rightarrow P \rightarrow R$).
+
+\subsection{Cálculo de Predicados}
+La lógica proposicional es insuficiente para analizar la estructura interna de los enunciados. Para ello, se introduce el concepto de predicado. Un predicado de $n$ posiciones, denotado como $P(x_1, x_2, \dots, x_n)$, es una función enunciativa que adquiere un valor de verdad al sustituir las variables individuales por objetos específicos del universo del discurso \cite{tremblay2000matematicas}.
+
+Para cuantificar estas variables, utilizamos:
+\begin{itemize}
+    \item \textbf{Cuantificador Universal ($(x)$ o $\forall x$):} Expresa que una propiedad se cumple para todos los elementos del universo.
+    \item \textbf{Cuantificador Existencial ($(\exists x)$):} Indica que existe al menos un elemento en el universo que satisface la propiedad.
+\end{itemize}
+
+\textbf{Ejemplo:} Si $N(x)$ significa ``$x$ es un entero'' y $P(x)$ significa ``$x$ es positivo'', el enunciado ``Todo entero es positivo'' se formaliza como $(x)(N(x) \rightarrow P(x))$.
+
+\section{Conjuntos, Relaciones y Pruebas Matemáticas}
+
+La teoría de conjuntos es el lenguaje subyacente de todas las estructuras discretas y es vital para el diseño de estructuras de datos y bases de datos estructuradas \cite{tremblay2000matematicas}.
+
+\subsection{Conceptos Básicos de Conjuntos}
+Un conjunto es una colección bien definida de objetos. Si un elemento $x$ pertenece a un conjunto $A$, escribimos $x \in A$. Dos conjuntos $A$ y $B$ son iguales ($A = B$) si contienen exactamente los mismos elementos. Si todo elemento de $A$ está en $B$, decimos que $A$ es un subconjunto de $B$ ($A \subseteq B$). El conjunto de todos los subconjuntos de $A$ se conoce como el \textit{conjunto potencia} de $A$, denotado por $\rho(A)$, y si $A$ tiene $n$ elementos, $\rho(A)$ tiene $2^n$ elementos \cite{tremblay2000matematicas}.
+
+Las operaciones fundamentales sobre conjuntos son análogas a las conectivas lógicas:
+\begin{itemize}
+    \item \textbf{Unión ($A \cup B$):} Elementos que están en $A$, en $B$, o en ambos. (Análogo a $\vee$).
+    \item \textbf{Intersección ($A \cap B$):} Elementos que están simultáneamente en $A$ y en $B$. (Análogo a $\wedge$).
+    \item \textbf{Complemento ($\sim A$):} Elementos del universo que no pertenecen a $A$. (Análogo a $\neg$).
+\end{itemize}
+
+\subsection{Relaciones y Ordenamiento}
+A partir de dos conjuntos $A$ y $B$, se define el producto cartesiano $A \times B$ como el conjunto de todos los pares ordenados $(a,b)$ donde $a \in A$ y $b \in B$. Una relación binaria $R$ de $A$ en $B$ es, formalmente, cualquier subconjunto del producto cartesiano $A \times B$ \cite{tremblay2000matematicas}.
+
+Una relación $R$ sobre un conjunto $A$ puede tener propiedades estructurales muy importantes:
+\begin{itemize}
+    \item \textbf{Reflexiva:} Para todo $x \in A$, $(x,x) \in R$.
+    \item \textbf{Simétrica:} Si $(x,y) \in R$, entonces $(y,x) \in R$.
+    \item \textbf{Transitiva:} Si $(x,y) \in R$ y $(y,z) \in R$, entonces $(x,z) \in R$.
+\end{itemize}
+
+Si una relación cumple simultáneamente con ser reflexiva, simétrica y transitiva, se denomina \textbf{relación de equivalencia}. Este tipo de relación particiona el conjunto original en clases de equivalencia mutuamente excluyentes, un concepto esencial para clasificar grandes volúmenes de datos mediante identificadores únicos.
+
+Por otro lado, si una relación es reflexiva, \textit{antisimétrica} (si $(x,y) \in R$ y $(y,x) \in R \Rightarrow x=y$) y transitiva, se llama \textbf{relación de orden parcial}, denotada comúnmente por $\le$.
+
+\subsection{Pruebas Matemáticas y Recursión}
+En matemáticas discretas, gran parte de los teoremas y propiedades sobre conjuntos finitos y números naturales se demuestran utilizando los axiomas de Peano y el Principio de Inducción Matemática. El principio establece que si una propiedad $P(n)$ se cumple para un caso base (usualmente $n=0$ o $n=1$), y si al asumir que $P(k)$ es cierta se puede demostrar que $P(k+1)$ también lo es, entonces $P(n)$ es cierta para todo número natural.
+
+La inducción matemática es la base conceptual de las funciones y algoritmos recursivos que programas rutinariamente, donde un problema complejo se divide en subproblemas del mismo tipo hasta llegar a un caso base trivial \cite{tremblay2000matematicas}.
+
+\section{Sistemas Algebraicos}
+
+La abstracción de conjuntos junto con operaciones definidas sobre ellos nos lleva al estudio de los sistemas algebraicos. Un sistema algebraico se denota como una $n$-upla $\langle S, f_1, f_2, \dots \rangle$, donde $S$ es un conjunto no vacío y $f_1, f_2, \dots$ son operaciones cerradas sobre $S$. En el contexto de las ciencias de la computación, el estudio de sistemas algebraicos con una operación binaria (comúnmente denotada como $*$) es fundamental para el diseño de autómatas, lenguajes formales y criptografía \cite{tremblay2000matematicas}.
+
+\subsection{Semigrupos y Monoides}
+Sea $S$ un conjunto y $*$ una operación binaria sobre $S$. El sistema algebraico $\langle S, * \rangle$ se llama \textbf{semigrupo} si la operación $*$ es cerrada y asociativa. Es decir, para cualesquiera $a, b, c \in S$:
+$$(a * b) * c = a * (b * c)$$
+Si un semigrupo posee un elemento identidad $e \in S$ tal que para todo $a \in S$ se cumple que $a * e = e * a = a$, entonces el sistema algebraico $\langle S, * \rangle$ recibe el nombre de \textbf{monoide}. 
+
+\textbf{Ejemplo:} Consideremos el conjunto $\Sigma^*$ de todas las cadenas posibles formadas a partir de un alfabeto finito $\Sigma$, bajo la operación de concatenación ($\cdot$). El sistema $\langle \Sigma^*, \cdot \rangle$ es un monoide. La concatenación es asociativa y el elemento identidad es la cadena vacía $\Lambda$. Este concepto es la base del procesamiento de cadenas (strings) en lenguajes de bajo y alto nivel como C o Python.
+
+\subsection{Grupos}
+El concepto más robusto dentro de los sistemas de una operación es el de \textbf{grupo}. Un monoide $\langle G, * \rangle$ es un grupo si y sólo si todo elemento de $G$ tiene un elemento inverso. Es decir, para cada $a \in G$, existe un $a^{-1} \in G$ tal que:
+$$a * a^{-1} = a^{-1} * a = e$$
+Si además la operación $*$ es conmutativa ($a * b = b * a$ para todo $a, b \in G$), el grupo se denomina \textit{grupo abeliano}.
+
+\textbf{Ejemplo:} El conjunto de los números enteros $\mathbb{Z}$ con la operación de adición usual $+$, forma el grupo abeliano $\langle \mathbb{Z}, + \rangle$. El elemento identidad es el $0$, y el inverso de cada número $a$ es su inverso aditivo $-a$. 
+
+Una propiedad profunda de los grupos finitos se establece mediante el \textbf{Teorema de Lagrange}, el cual dicta que si $H$ es un subgrupo de un grupo finito $G$, el orden de $H$ (número de elementos de $H$) divide exactamente al orden de $G$. Este teorema y la aritmética de residuos se aplican extensamente en el diseño de códigos detectores y correctores de errores, algoritmos de \textit{hashing} y técnicas de \textit{quant trading} que requieren ciclos matemáticos precisos.
+
+\section{bibliografía}
+\vspace{-0.7cm}
+\renewcommand{\refname}{}
+\bibliographystyle{apalike}
+\bibliography{SubPartes/bibliografia}
+
+\end{document}
