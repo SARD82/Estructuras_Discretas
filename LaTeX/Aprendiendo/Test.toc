@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}El Viaje De Arthur Morgan}{1}{section.1}%
+\contentsline {section}{\numberline {2}Tablas Desde Overleaf}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Comandos básicos}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Ecuaciones}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Hipervinculos}{3}{section.3}%
+\contentsline {subsubsection}{\numberline {3.0.1}Referencias Información}{3}{subsubsection.3.0.1}%
+\contentsline {section}{\numberline {4}Color En El Texto}{3}{section.4}%
+\contentsline {section}{\numberline {5}Código En Documento}{3}{section.5}%
+\contentsline {section}{\numberline {6}Referencias}{3}{section.6}%

@@ -1,0 +1,111 @@
+\documentclass[12pt, letterpaper]{article} % [Tamaño letra(npt), tipo de hoja]{article, beamer, book, letter, report.}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry} % Margenes de la hoja (in, mm, cm).
+\input{Subpartes_Test/librerias.tex} % Importar otro archivo(librerias), usar url.
+
+\title{Red Dead Redemption 2: El Crepúsculo del Lejano Oeste} % Esto lo usa maketitle para crear el titulo.
+\author{SARD}
+\date{Marzo 2026}
+
+\begin{document}
+
+% Agragar el titulo.
+\maketitle
+
+% Indice.
+\tableofcontents
+
+% Entornot (Función que da formato)
+\begin{abstract} % seleccionar texto y ctrl + b para negritas o usar \textbf{}, ctrl + i o \textit{} para italicas
+    \textbf{\textit{Lanzado por Rockstar Games en 2018, Red Dead Redemption 2 trasciende la 
+    definición de un simple videojuego para convertirse en una verdadera epopeya 
+    narrativa sobre el fin de una era. Ambientado en 1899, el título captura los 
+    últimos suspiros del Lejano Oeste americano, un período en el que la ley, la 
+    industria y la civilización comienzan a dominar las tierras que antes eran 
+    salvajes e indomables.}}
+\end{abstract}
+
+
+
+% Nueva pagina.
+% \newpage 
+% Indice.
+% \tableofcontents 
+
+% Indice de figuras.
+% \listoffigures
+
+% Indice de tablas.
+% \listoftables
+
+% Agregar secciones.
+\section{El Viaje De Arthur Morgan}
+\input{Subpartes_Test/introduccion.tex} % Importar la introducción, usar url.
+
+\section{Tablas Desde Overleaf}
+Parte del desarrollo, aqui veras como insertar las tablas.
+
+1. Primero vamos a Overleaf.
+2. Creamos un archivo para hacer la tabla.
+3. Desde el Visual Editor creamos la tabla en los tres puntitos de arriba a la derecha.
+4. Ahi podemos ir creando la tabla moviendonos con "TAB" entre las celdas.
+5. Desde el Code Editor copiamos el código y lo pegamos en VS Code.
+6. Podemos usar los [H], etc...
+
+8. Más sencillo podemos hacer tablas sencillas en Excel, copiarlas en Overleaf en el Visual Editor y despues copiar el código y pegarlo en VS Code.
+9. Si es una tabla dificil, pegarla como imagen.
+
+
+% Subsección.
+\subsection{Comandos básicos}
+
+\subsection{Ecuaciones}
+La siguiente ecución es $f(x)=2x+8$ % Usar $$ para incertar una ecuación.
+
+% Para desarrollos de ecuaciones usar $$$$
+$$\frac{d}{d_t}(2x²+8x+10)$$
+$$=4x+8$$
+
+% Para no usar los $$
+\begin{equation}
+    2x²+8x+10
+    \label{eq:ecu1}
+\end{equation}
+Ecuacion.\ref{eq:ecu1}
+
+% Sección.
+\section{Hipervinculos}
+\href{https://github.com/SARD82}{Click aqui para ver mi GitHub} % {Enlace}{Texto con el hipervinculo}
+
+% Subsubsección.
+\subsubsection{Referencias Información}
+1. Citar usando BibTeX para no perder el formato de la cita.\cite{crowley2021educational} % Usarlo para citar la referencia y que salga al final en las referencias.
+2. Usar las citaciones fuera de cualquier sección, se genera automatico o agreagar lo de abajo para que aparezca en el índice. \cite{games2010red}
+
+\definecolor{micolor}{RGB}{90, 107, 232} % Para crear nustro color propio usar un seleccionador de colores RGB desde Google.
+
+% Sección.
+\section{Color En El Texto}
+Más que un juego de acción centrado en asaltos a trenes y tiroteos, Red Dead Redemption 2 
+es un profundo estudio de personaje sobre la redención, la pérdida y la marcha implacable del 
+progreso. \textcolor{micolor}{Es una experiencia intencionalmente pausada, a veces melancólica y brutal, pero al 
+mismo tiempo hermosa, que deja una huella emocional profunda en quienes deciden cabalgar 
+por sus llanuras y montañas.} % Black, red, Blue, green sin la biblioteca de más colores.
+
+En ecuaciones \textcolor{green}{$f(x)=2x²$}
+
+% Sección.
+\section{Código En Documento}
+Ver el \href{https://www.youtube.com/watch?v=Z9Yg3nCWqKk&list=PLxRI-CzeuZzcxfbyj1swsZkQ2oWZPDs5t&index=14}{\textcolor{red}{video}} para recordar.
+
+
+\section{Referencias}
+\vspace{-0.7cm}
+\renewcommand{\refname}{}
+\bibliographystyle{plain} % Estilo de la bibliografía (plain, plainnat o apalike).
+\bibliography{Subpartes_Test/biblio} % Llamar archivo de la bibliografía.
+
+\end{document}
+
+% Recursos:
+% https://manualdelatex.com/
+% https://www.overleaf.com/learn/latex/Inserting_Images_es.
