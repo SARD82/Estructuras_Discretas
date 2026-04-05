@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex Resumen"] 1775356199.12502 "Resumen.aux" "Resumen.bbl" "Resumen" 1775356297.71839 0
+["bibtex Resumen"] 1775356199.12502 "Resumen.aux" "Resumen.bbl" "Resumen" 1775357013.13042 0
   "./SubPartes/bibliografia.bib" 1775354249 301 fe106e43f6444455f6a7a0b6c59fcf2f ""
   "C:/Users/santi/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/apalike.bst" 1291972791 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Resumen.aux" 1775356296 2358 b336d8bf84ad9dd79456ca994e679753 "pdflatex"
+  "Resumen.aux" 1775357011 2358 b336d8bf84ad9dd79456ca994e679753 "pdflatex"
   (generated)
   "Resumen.bbl"
   "Resumen.blg"
   (rewritten before read)
-["pdflatex"] 1775356295.22989 "c:/Users/santi/OneDrive/Documentos/Santiago/Programacion/FI/Estrucutras Discretas/LaTeX/Resumen_Primeros_3_Temas/Resumen.tex" "Resumen.pdf" "Resumen" 1775356297.72027 0
+["pdflatex"] 1775357009.31629 "c:/Users/santi/OneDrive/Documentos/Santiago/Programacion/FI/Estrucutras Discretas/LaTeX/Resumen_Primeros_3_Temas/Resumen.tex" "Resumen.pdf" "Resumen" 1775357013.13201 0
   "C:/Users/santi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1775352081 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/santi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1774986158 13333849 fbce8ac0550f967b096b4abc339350a1 ""
   "C:/Users/santi/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -103,16 +103,16 @@
   "C:/Users/santi/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/santi/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/santi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Resumen.aux" 1775356296 2358 b336d8bf84ad9dd79456ca994e679753 "pdflatex"
+  "Resumen.aux" 1775357011 2358 b336d8bf84ad9dd79456ca994e679753 "pdflatex"
   "Resumen.bbl" 1775356199 351 d9d15a8741c242c0cb287b9d79ccc996 "bibtex Resumen"
-  "Resumen.out" 1775356296 2313 f6d79704c0fab4f74729b6441fc8cc46 "pdflatex"
-  "Resumen.tex" 1775356294 10611 674cc02ff178378666628694e7561c6b ""
-  "Resumen.toc" 1775356296 1105 1c860fedddae1a1d18d6926d8a8c5ddf "pdflatex"
+  "Resumen.out" 1775357011 2313 f6d79704c0fab4f74729b6441fc8cc46 "pdflatex"
+  "Resumen.tex" 1775357006 10611 674cc02ff178378666628694e7561c6b ""
+  "Resumen.toc" 1775357011 1105 1c860fedddae1a1d18d6926d8a8c5ddf "pdflatex"
   "SubPartes/Figures/Escudo_FI_Rojo.png" 1727492353 198854 d3715efb397e49b853ab098de6a99049 ""
   "SubPartes/Figures/UNAM_Logo_Rojo.png" 1748897332 215965 22d58b826a9eb5d2d7c6f62e46478fac ""
-  "SubPartes/Portada.Tex" 1775356085 1070 4e040f649397a1d22ad6d6f1b99175ce ""
+  "SubPartes/Portada.Tex" 1775356996 1070 def78d5cc51fcad34411951eacf2829a ""
   "SubPartes/librerias.Tex" 1775355332 336 65ba6386f16a3edd4808469480af45b8 ""
-  "c:/Users/santi/OneDrive/Documentos/Santiago/Programacion/FI/Estrucutras Discretas/LaTeX/Resumen_Primeros_3_Temas/Resumen.tex" 1775356294 10611 674cc02ff178378666628694e7561c6b ""
+  "c:/Users/santi/OneDrive/Documentos/Santiago/Programacion/FI/Estrucutras Discretas/LaTeX/Resumen_Primeros_3_Temas/Resumen.tex" 1775357006 10611 674cc02ff178378666628694e7561c6b ""
   (generated)
   "Resumen.aux"
   "Resumen.log"
