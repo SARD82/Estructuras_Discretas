@@ -47,8 +47,8 @@ Actividades de la materia **Estructuras Discretas** de la Facultad de Ingenierí
 │   └── agente_laberinto_aleatorio.py   # Variante con laberinto aleatorio.
 ├── requirements.txt                    # Dependencias del entorno Python.
 ├── LICENSE                             # Licencia del repositorio.
-├── README.md                # Documentación en español (este archivo).
-└── README.en.md             # Documentación en inglés.
+├── README.md                           # Documentación en español (este archivo).
+└── README.en.md                        # Documentación en inglés.
 ```
 
 ## 👥 Créditos
